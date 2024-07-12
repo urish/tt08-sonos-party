@@ -6,26 +6,23 @@ V {}
 S {}
 E {}
 B 2 420 -300 1220 100 {flags=graph
-y1=1
+y1=-5
 y2=12
 ypos1=0
 ypos2=2
-divy=5
+divy=10
 subdivy=1
 unity=1
-x1=2.11792e-07
+x1=2.11779e-07
 x2=0.000102133
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="x1.stage1
-x1.stage2
-x1.stage3
-x1.vout
-ua[0]
-analog_pad"
-color="4 19 6 7 10 21"
+node="ua[0]
+ua[1]
+clk"
+color="4 7 10"
 dataset=-1
 unitx=1
 logx=0
@@ -48,6 +45,14 @@ N 210 -90 250 -90 {
 lab=analog_pad}
 N 230 -90 230 -80 {
 lab=analog_pad}
+N -120 -370 -90 -370 {
+lab=VAPWR}
+N -120 -350 -120 -220 {
+lab=CLK}
+N -120 -350 -90 -350 {
+lab=CLK}
+N -90 -330 -90 -310 {
+lab=GND}
 C {devices/code.sym} -160 50 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -85,8 +90,12 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/parax_cap.sym} 130 -70 0 0 {name=C1 gnd=0 value=2.5p m=1}
-C {devices/lab_pin.sym} 210 -240 2 0 {name=p3 sig_type=std_logic lab=ua[0]}
+C {devices/lab_pin.sym} 210 -240 2 0 {name=p3 sig_type=std_logic lab=ua[1]}
 C {devices/lab_pin.sym} 110 -90 0 0 {name=p4 sig_type=std_logic lab=ua[0]}
 C {devices/lab_pin.sym} 250 -90 2 0 {name=p1 sig_type=std_logic lab=analog_pad}
 C {devices/parax_cap.sym} 230 -70 0 0 {name=C2 gnd=0 value=2.5p m=1}
-C {pump_pos.sym} 60 -220 0 0 {name=x1}
+C {pump_pos.sym} 60 -350 0 0 {name=x1}
+C {pump_neg.sym} 60 -220 0 0 {name=x2}
+C {devices/vdd.sym} -120 -370 0 0 {name=l2 lab=VAPWR}
+C {devices/gnd.sym} -90 -310 0 0 {name=l7 lab=GND}
+C {devices/lab_pin.sym} 210 -370 2 0 {name=p5 sig_type=std_logic lab=ua[0]}
