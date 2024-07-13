@@ -70,7 +70,7 @@ C {devices/code.sym} -20 50 0 0 {name=STIMULI only_toplevel=false value="
 
 .control
 run
-write testbench.raw
+write pump_tb.raw
 .endc
 "}
 C {devices/vsource.sym} 330 -210 0 0 {name=V1 value=3.3}
@@ -78,7 +78,7 @@ C {devices/gnd.sym} 330 -180 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 330 -240 0 0 {name=l4 lab=VAPWR}
 C {devices/launcher.sym} 480 130 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/testbench.raw tran"
+tclcommand="xschem raw_read $netlist_dir/pump_tb.raw tran"
 }
 C {devices/vsource.sym} -120 -190 0 1 {name=V2 value="PULSE(0 1.8 0 0 0 250n 500n)"}
 C {devices/title.sym} 210 270 0 0 {name=l5 author="Uri Shaked"}
