@@ -196,7 +196,8 @@ N -80 440 -50 440 {
 lab=VPRGNEG}
 N -50 440 -20 440 {
 lab=VPRGNEG}
-C {devices/flash_cell.sym} 290 20 0 0 {name=X1 model=flash1 dvt=0 width=0.16u length=0.3u m=1}
+C {devices/flash_cell.sym} 290 20 0 0 {name=X1 model=sky130_fd_pr__special_nfet_pass_flash width=0.45 length=0.15 m=1
+format="@name @pinlist @model w=@width l=@length m=@m" }
 C {pump_neg.sym} -230 -430 0 0 {name=x2}
 C {pump_pos.sym} -230 -330 0 0 {name=x3}
 C {devices/lab_pin.sym} -80 -450 2 0 {name=p1 sig_type=std_logic lab=VPRGNEG}
