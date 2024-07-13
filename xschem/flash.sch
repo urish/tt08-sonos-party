@@ -12,9 +12,9 @@ lab=VGND}
 N -390 -410 -390 -390 {
 lab=VGND}
 N -390 -310 -380 -310 {
-lab=GND}
+lab=VGND}
 N -390 -310 -390 -290 {
-lab=GND}
+lab=VGND}
 N -60 -70 -30 -70 {
 lab=VPRGPOS}
 N 0 -70 20 -70 {
@@ -204,8 +204,8 @@ C {devices/lab_pin.sym} -80 -450 2 0 {name=p1 sig_type=std_logic lab=VPRGNEG}
 C {devices/lab_pin.sym} -80 -350 2 0 {name=p2 sig_type=std_logic lab=VPRGPOS}
 C {devices/ipin.sym} -720 -210 0 0 {name=p3 lab=VAPWR}
 C {devices/ipin.sym} -720 -170 0 0 {name=p4 lab=VGND}
-C {devices/gnd.sym} -390 -390 0 0 {name=l1 lab=VGND}
-C {devices/gnd.sym} -390 -290 0 0 {name=l2 lab=GND}
+C {vgnd.sym} -390 -390 0 0 {name=l1}
+C {vgnd.sym} -390 -290 0 0 {name=l2}
 C {devices/lab_pin.sym} -720 -210 2 0 {name=p5 sig_type=std_logic lab=VAPWR}
 C {devices/lab_pin.sym} -380 -450 2 1 {name=p6 sig_type=std_logic lab=VAPWR}
 C {devices/lab_pin.sym} -380 -350 2 1 {name=p7 sig_type=std_logic lab=VAPWR}
@@ -283,7 +283,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 10 -180 2 0 {name=p25 sig_type=std_logic lab=sonos_body}
 C {devices/lab_pin.sym} -80 -180 0 0 {name=p26 sig_type=std_logic lab=VPRGNEG}
-C {devices/gnd.sym} -410 -40 0 0 {name=l3 lab=VGND}
+C {vgnd.sym} -410 -40 0 0 {name=l3}
 C {devices/lab_pin.sym} -410 -210 0 0 {name=p27 sig_type=std_logic lab=VDPWR}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} -290 -160 0 0 {name=M5
 L=0.45
@@ -313,7 +313,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/gnd.sym} -270 -40 0 0 {name=l5 lab=VGND}
+C {vgnd.sym} -270 -40 0 0 {name=l5}
 C {devices/lab_pin.sym} -270 -210 0 0 {name=p30 sig_type=std_logic lab=VDPWR}
 C {devices/lab_wire.sym} -90 -130 0 0 {name=p29 sig_type=std_logic lab=prog_en_buf}
 C {devices/lab_wire.sym} -310 -110 0 0 {name=p31 sig_type=std_logic lab=prog_enb}
@@ -379,7 +379,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 10 140 2 0 {name=p37 sig_type=std_logic lab=sonos_gate}
 C {devices/lab_pin.sym} -80 140 0 0 {name=p38 sig_type=std_logic lab=VPRGNEG}
-C {devices/gnd.sym} -410 280 0 0 {name=l8 lab=VGND}
+C {vgnd.sym} -410 280 0 0 {name=l8}
 C {devices/lab_pin.sym} -410 110 0 0 {name=p39 sig_type=std_logic lab=VDPWR}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} -290 160 0 0 {name=M11
 L=0.45
@@ -409,7 +409,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/gnd.sym} -270 280 0 0 {name=l10 lab=VGND}
+C {vgnd.sym} -270 280 0 0 {name=l10}
 C {devices/lab_pin.sym} -270 110 0 0 {name=p41 sig_type=std_logic lab=VDPWR}
 C {devices/lab_wire.sym} -90 190 0 0 {name=p42 sig_type=std_logic lab=prog_en_buf}
 C {devices/lab_wire.sym} -310 210 0 0 {name=p43 sig_type=std_logic lab=erase_enb}
@@ -475,7 +475,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} -510 480 0 0 {name=p45 sig_type=std_logic lab=hvshutdown}
 C {devices/lab_pin.sym} -80 440 0 0 {name=p47 sig_type=std_logic lab=VPRGNEG}
-C {devices/gnd.sym} -450 570 0 0 {name=l4 lab=VGND}
+C {vgnd.sym} -450 570 0 0 {name=l4}
 C {devices/lab_pin.sym} -450 400 0 0 {name=p48 sig_type=std_logic lab=VDPWR}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} -310 450 0 0 {name=M19
 L=0.45
@@ -505,7 +505,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/gnd.sym} -290 570 0 0 {name=l6 lab=VGND}
+C {vgnd.sym} -290 570 0 0 {name=l6}
 C {devices/lab_pin.sym} -290 400 0 0 {name=p49 sig_type=std_logic lab=VDPWR}
 C {devices/lab_wire.sym} -80 480 0 0 {name=p50 sig_type=std_logic lab=hvshutdown_buf}
 C {devices/lab_wire.sym} -330 500 0 0 {name=p51 sig_type=std_logic lab=hvshutdown_b}
